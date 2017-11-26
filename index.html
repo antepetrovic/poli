@@ -27,32 +27,55 @@
             font-weight: normal;
             font-style: normal;
         }
+
+        nav ul {
+            display: none;
+            width: 100%;
+            color: #707070;
+            padding: 0;
+        }
+
+        nav li {
+            text-align: left;
+            font: 14px/20px 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+            font-style: normal;
+            height: 48px;
+            border-bottom: solid 1px #e8e8e8;
+            padding-top: 15px;
+        }
+        nav li a {
+            padding: 0 0 0 30px;
+        }
+        .menuDrop {
+            display: block;
+        }
         .hamburgerDiv {
             position: relative;
             border: solid 0.5px #DDDDDD;
-            width: 50px;
-            height: 40px;
+            width: 44px;
+            height: 44px;
             margin: auto;
             padding: 5px;
             margin-bottom: 40px;
+            cursor: pointer;
         }
         .hamburgerDiv span {
             position: absolute;
             display: block;
             top:4px;
-            left: 4px;
-            width: 40px;
-            height: 4px;
+            left: 11px;
+            width: 20px;
+            height: 2px;
             background:#2BC0D8;
         }
         .hamburgerDiv span:nth-child(1) {
-            top: 10px;
+            top: 18px;
         }
         .hamburgerDiv span:nth-child(2) {
-            top: 18.5px;
+            top: 22px;
         }
         .hamburgerDiv span:nth-child(3) {
-            top: 27px;
+            top: 26px;
         }
         .title {
             color: #595959;
@@ -91,15 +114,15 @@
         .headerImageDiv img:nth-of-type(1) {
             animation-name: photoSlide;
             animation-iteration-count: infinite;
-            animation-duration: 6s;
+            animation-duration: 4s;
             animation-direction: alternate;
         }
         .headerImageDiv img:nth-of-type(2) {
             position: absolute;
             animation-name: photoSlide;
             animation-iteration-count: infinite;
-            animation-duration: 6s;
-            animation-delay: 6s;
+            animation-duration: 4s;
+            animation-delay: 4s;
             animation-direction: alternate;
         }
         .headerImageDiv img:nth-of-type(3) {
@@ -151,7 +174,12 @@
                 <span></span>
                 <span></span>
             </div>
-            <a><span></span></a>
+            <ul>
+                <li><a>NASLOVNA</a></li>
+                <li><a>PREGLEDI</a></li>
+                <li><a>PREGLEDI</a></li>
+                <li><a>KONTAKT</a></li>
+            </ul>
         </nav>
         <div class="headerImageDiv">
             <img class="first" src="image/image-1.jpg">
@@ -166,7 +194,7 @@
                 <a>Saznaj Više</a>
             </div>
             <div>
-                <h3>Kontakt</h3>
+                <h3>Javite nam se</h3>
                 <p>Cum sociis natoque penatibus et magnis dis parturient montesmus.
                     Pro vel nibh et elit mollis commodo et nec augue tristique sed</p>
                 <a>Saznaj Više</a>
@@ -222,6 +250,7 @@
     <footer>
 
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
