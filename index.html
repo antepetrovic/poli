@@ -17,13 +17,13 @@
             list-style-type: none;
         }
         h3 {
-            font-size: calc(20px + (40 - 14) * ((100vw - 300px) / (1600 - 300)));
+            font-size: 24px;
             font-weight: 400;
         }
         nav {
             text-align: center;
         }
-        p {
+        p, .fl, .fr {
             font: 13px/18px  Arial, Helvetica, 'Nimbus Sans L', sans-serif;
             font-weight: 300;
             font-style: normal;
@@ -145,17 +145,19 @@
             padding-bottom: 20px;
         }
         .cubes > div {
-            width: 90%;
-            margin-left: 5%;~
-            height: 250px;
+            position: relative;
+            box-sizing: border-box;
+            width: 95%;
+            margin-left: 2.5%;
+            height: 300px;
             background: #2BC0D8;
             padding: 20px 20px 20px;
             color: #fff;
         }
-        .cubes > div:nth-of-type(1){background: #6~D1E4}
-        .cubes > div:nth-of-type(2){background: #43C6DE}
-        .cubes > div:nth-of-type(3){background: #44AFDD}
-        .cubes > div:nth-of-type(4){background: #369BDF}
+        .cubes > div:nth-of-type(1){background: #56cce1}
+        .cubes > div:nth-of-type(2){background: #2cbfd9;}
+        .cubes > div:nth-of-type(3){background: #2ca6d9}
+        .cubes > div:nth-of-type(4){background: #1b90da}
 
         .cubes div ul {
             padding: 0;
@@ -164,7 +166,7 @@
             font-weight: 300;
         }
         .cubes div p {
-            margin-bottom: 55px;
+
         }
         .cubes div ul .fl {
             float: left;
@@ -203,9 +205,10 @@
             margin: 20px 10px 0 0;
         }
         .saznajVise {
+            position: absolute;
             padding: 5px;
             width: 120px;
-            margin-top: 20px;
+            bottom: 20px;
             border: solid 1px rgba(255, 255, 255, 0.5);
         }
         .icon-right-open {
@@ -213,6 +216,106 @@
             margin-left: 10px;
         }
 
+        .crossfade {
+            position: relative;
+            padding-top: 68.88px;
+            width: 95%;
+            margin-left: 2.5%;
+            height: 350px;
+        }
+        .crossfade > figure {
+            animation: imageAnimation 30s linear infinite 0s;
+            backface-visibility: hidden;
+            background-size: cover;
+            background-position: 50% 20%;
+            color: transparent;
+            opacity: 0;
+            left: 0;
+            top:0;
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            z-index: 0;
+            margin: 0;
+        }
+
+        .crossfade > figure:nth-child(1) {
+            background-image: url('image/image-1.jpg');
+            animation: firstImage;
+            opacity: 1;
+        }
+
+        .crossfade > figure:nth-child(2) {
+            animation-delay: 6s;
+            background-image: url('image/image-2.jpg');
+        }
+        .crossfade > figure:nth-child(3) {
+            animation-delay: 12s;
+            background-image: url('image/image-3.jpg');
+        }
+
+        @keyframes firstImage {
+            0% {opacity: 1;}
+            100% {opacity: 1;
+            }
+        }
+
+        @keyframes
+        imageAnimation {
+            0% {
+                animation-timing-function: ease-in;
+                opacity: 0;
+            }
+            8% {
+                animation-timing-function: ease-out;
+                opacity: 1;
+            }
+            17% {
+                opacity: 1
+            }
+            25% {
+                opacity: 0
+            }
+            100% {
+                opacity: 0
+            }
+        }
+
+        @media screen and (min-width: 600px) {
+            p, .fl, .fr {
+                font: 15px/18px  Arial;
+            }
+            .cubes {
+                width: 90%;
+                margin-left: 5%;
+                padding-bottom: 20px;
+            }
+            .cubes > div {
+                display: table;
+                width: 50%;
+                margin-left: 0;
+                float: left;
+            }
+        }
+        @media screen and (min-width: 1000px) {
+            p, .fl, .fr {
+                font: 13px/18px  Arial;
+            }
+            .crossfade {
+                width: 80%;
+                margin-left: 10%;
+                height: 500px;
+            }
+            .cubes {
+                margin: auto;
+                max-width: 1200px;
+            }
+            .cubes > div {
+                /*max-width: 300px;*/
+                display: table;
+                width: 25%;
+            }
+        }
 
     </style>
 </head>
@@ -293,23 +396,26 @@
                 <li><a>KONTAKT</a></li>
             </ul>
         </nav>
-        <div class="headerImageDiv">
-            <img class="first" src="image/image-1.jpg">
-            <img class="second" src="image/image-2.jpg">
-            <!--<img class="third" src="image/image-3.jpg">-->
+
+        <div class="crossfade">
+            <figure></figure>
+            <figure></figure>
+            <figure></figure>
+            <figure></figure>
+            <figure></figure>
         </div>
         <div class="cubes">
             <div>
                 <h3>Djelatnosti</h3>
                 <p>Cum sociis natoque penatibus et magnis dis parturient montesmus.
                     Pro vel nibh et elit mollis commodo et nec augue tristique sed</p>
-                <a class="saznajVise">Saznaj Više<span class="icon-right-open"></a>
+                <a class="saznajVise">Saznaj Više<span class="icon-right-open"></span></a>
             </div>
             <div>
                 <h3>Laboratorij</h3>
                 <p>Cum sociis natoque penatibus et magnis dis parturient montesmus.
                     Pro vel nibh et elit mollis commodo et nec augue tristique sed</p>
-                <a class="saznajVise">Saznaj Više<span class="icon-right-open"></a>
+                <a class="saznajVise">Saznaj Više<span class="icon-right-open"></span></a>
             </div>
             <div>
                 <h3>Radno Vrijeme</h3>
@@ -318,21 +424,22 @@
                     <li><span class="fl">Subota</span><span class="fr">8.00 - 14.00</span></li>
                     <li><span class="fl">Nedjelja</span><span class="fr">Ne radimo</span></li>
                 </ul>
-                <a class="saznajVise">Saznaj Više<span class="icon-right-open"></a>
+                <a class="saznajVise">Saznaj Više<span class="icon-right-open"></span></a>
             </div>
             <div>
                 <h3>Kontak</h3>
-                <div class="kontakt">
-                    <h4>Split</h4>
-                    <a href="tel:+38521674135"><span class="icon-phone"></span>021 674 135</a>
-                    <a class="mail" href="mailto:poliklinika.drpetrovic@gmail.com"><span class="icon-mail"></span>poliklinika.drpetrovic@gmail.com</a>
-                </div>
-                <div class="kontakt">
-                    <h4>Vrgorac</h4>
-                    <a href="tel:+38521674135"><span class="icon-phone"></span>021 674 135</a>
-                    <a class="mail" href="mailto:poliklinika.drpetrovic@gmail.com"><span class="icon-mail"></span>poliklinika.drpetrovic@gmail.com</a>
-                </div>
-                <a class="saznajVise">Saznaj Više<span class="icon-right-open"></a>
+                <!--<div class="kontakt">-->
+                    <!--<h4>Split</h4>-->
+                    <!--<a href="tel:+38521534701"><span class="icon-phone"></span>021 534 701</a>-->
+                    <!--<a class="mail" href="mailto:poliklinika.petrovic.st@gmail.com"><span class="icon-mail"></span>poliklinika.petrovic.st@gmail.com</a>-->
+                <!--</div>-->
+                <!--<div class="kontakt">-->
+                    <!--<h4>Vrgorac</h4>-->
+                    <!--<a href="tel:+38521674135"><span class="icon-phone"></span>021 674 135</a>-->
+                    <!--<a class="mail" href="mailto:poliklinika.drpetrovic@gmail.com"><span class="icon-mail"></span>poliklinika.drpetrovic@gmail.com</a>-->
+                <!--</div>-->
+                <p>Ako imate pitanja ili želite dogovoriti pregled slobodno nam se obratite</p>
+                <a class="saznajVise">Saznaj Više<span class="icon-right-open"></span></a>
             </div>
         </div>
     </header>
