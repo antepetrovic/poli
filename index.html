@@ -228,7 +228,7 @@
             animation: imageAnimation 30s linear infinite 0s;
             backface-visibility: hidden;
             background-size: cover;
-            background-position: 50% 20%;
+            background-position: 50% 10%;
             color: transparent;
             opacity: 0;
             left: 0;
@@ -333,6 +333,34 @@
                 /*max-width: 300px;*/
                 display: table;
                 width: 25%;
+            }
+            .hamburgerDiv {
+                display: none;
+            }
+            .title {
+                display: inline-block;
+            }nav {
+                 width: 80%;
+                 margin: auto;
+                 max-width: 1200px;
+                margin-bottom: 50px;
+             }
+            nav ul {
+                float: right;
+                display: flex;
+                flex-direction: row;
+                margin: 0;
+                width: auto;
+            }
+            nav ul li {
+                text-align: center;
+                border-top: solid 1px #e8e8e8;
+                border-left: solid 1px #e8e8e8;
+                border-bottom: solid 1px #e8e8e8;
+            }
+            nav ul li:nth-of-type(4){border-right: solid 1px #e8e8e8;}
+            nav ul li a {
+                padding: 0 10px;
             }
         }
 
