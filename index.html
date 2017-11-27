@@ -24,13 +24,14 @@
             text-align: center;
         }
         p, .fl, .fr {
-            font: 13px/18px  Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+            font: 16px/18px  Arial, Helvetica, 'Nimbus Sans L', sans-serif;
             font-weight: 300;
             font-style: normal;
         }
 
         nav ul {
             display: none;
+            position: relative;
             width: 100%;
             color: #707070;
             padding: 0;
@@ -295,6 +296,24 @@
                 width: 50%;
                 margin-left: 0;
                 float: left;
+            }
+            nav {
+                width: 90%;
+                margin-left: 5%;
+                min-height: 100px;
+                height: auto;
+                padding-top: 30px;
+            }
+            nav ul {
+                margin-top: 80px;
+                width: 100%;
+            }
+            .title {
+                float: left;
+                margin-top: 0;
+            }
+            .hamburgerDiv {
+                float: right;
             }
         }
         @media screen and (min-width: 1000px) {
