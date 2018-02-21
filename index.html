@@ -1,394 +1,23 @@
-
 <!doctype html>
 <html lang="hr">
 <head>
-    <title>Poliklinika Petrović</title>
+    <title>Poliklinika Petrović-Privatna poliklinika dr. Pavao Petrovi</title>
     <meta charset="utf-8" />
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1 minimum-scale=1 maximum-scale=1" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Privatna poliklinika medicine rada, dermatologije, neurologije, gastroenterologije">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="ICONS/css/fontello.css">
-    <style>
-        *{
-            box-sizing: border-box;
-            font-family: 'Roboto', Arial, Helvetica, sans-serif;
-            list-style-type: none;
-        }
-        h3 {
-            font-size: 24px;
-            font-weight: 400;
-        }
-        nav {
-            text-align: center;
-        }
-        p, .fl, .fr {
-            font: 16px/18px  Arial, Helvetica, 'Nimbus Sans L', sans-serif;
-            font-weight: 300;
-            font-style: normal;
-        }
-
-        nav ul {
-            display: none;
-            position: relative;
-            width: 100%;
-            color: #707070;
-            padding: 0;
-        }
-
-        nav li {
-            text-align: left;
-            font: 14px/20px 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
-            font-style: normal;
-            font-weight: 100;
-            height: 48px;
-            border-bottom: solid 1px #e8e8e8;
-            padding-top: 15px;
-        }
-        nav li:nth-of-type(1):hover {
-            background: #56cce1;
-            color: #fff;
-        }
-        nav li:nth-of-type(2):hover {
-            background: #2cbfd9;
-            color: #fff;
-        }
-        nav li:nth-of-type(3):hover {
-            background: #2ca6d9;
-            color: #fff;
-        }
-        nav li:nth-of-type(4):hover {
-            background: #1b90da;
-            color: #fff;
-        }
-        nav li a {
-            padding: 0 0 0 30px;
-        }
-        #Capa_1 {
-            margin-right: 10px;
-        }
-        .menuDrop {
-            display: block;
-        }
-        .selected {
-            background: #56cce1;
-            color: #fff;
-        }
-        .hamburgerDiv {
-            position: relative;
-            border: solid 0.5px #DDDDDD;
-            width: 44px;
-            height: 44px;
-            margin: auto;
-            padding: 5px;
-            margin-bottom: 40px;
-            cursor: pointer;
-        }
-        .hamburgerDiv span {
-            position: absolute;
-            display: block;
-            top:4px;
-            left: 11px;
-            width: 20px;
-            height: 2px;
-            background:#2BC0D8;
-        }
-        .hamburgerDiv span:nth-child(1) {
-            top: 18px;
-        }
-        .hamburgerDiv span:nth-child(2) {
-            top: 22px;
-        }
-        .hamburgerDiv span:nth-child(3) {
-            top: 26px;
-        }
-        .title {
-            color: #595959;
-            font-weight: 500;
-        }
-        .title span {
-            color: #2BC0D8;
-            font-weight: 500;
-        }
-        .headerImageDiv {
-            width:90%;
-            margin-left: 5%;
-            color: #2BC0D8;
-            position: relative;
-            margin-bottom: -5px;
-        }
-        @keyframes photoSlide {
-            0% {
-                opacity: 1;
-            }
-            33% {
-                opacity: 1;
-            }
-            66% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 0;
-            }
-        }
-        .headerImageDiv img {
-            width: 100%;
-            top:0;
-            bottom:0;
-            left:0;
-            right:0;
-        }
-        .headerImageDiv img:nth-of-type(1) {
-            animation-name: photoSlide;
-            animation-iteration-count: infinite;
-            animation-duration: 4s;
-            animation-direction: alternate;
-        }
-        .headerImageDiv img:nth-of-type(2) {
-            position: absolute;
-            animation-name: photoSlide;
-            animation-iteration-count: infinite;
-            animation-duration: 4s;
-            animation-delay: 4s;
-            animation-direction: alternate;
-        }
-        .headerImageDiv img:nth-of-type(3) {
-            animation-name: photoSlide;
-            animation-iteration-count: infinite;
-            animation-duration: 10s;
-        }
-        .cubes {
-            padding-bottom: 20px;
-        }
-        .cubes > div {
-            position: relative;
-            box-sizing: border-box;
-            width: 95%;
-            margin-left: 2.5%;
-            height: 300px;
-            background: #2BC0D8;
-            padding: 20px 20px 20px;
-            color: #fff;
-        }
-        .cubes > div:nth-of-type(1){background: #56cce1}
-        .cubes > div:nth-of-type(2){background: #2cbfd9;}
-        .cubes > div:nth-of-type(3){background: #2ca6d9}
-        .cubes > div:nth-of-type(4){background: #1b90da}
-
-        .cubes div ul {
-            padding: 0;
-        }
-        .cubes div a {
-            font-weight: 300;
-        }
-        .cubes div p {
-
-        }
-        .cubes div ul .fl {
-            float: left;
-        }
-        .cubes div ul .fr {
-            float: right;
-        }
-        .cubes div ul li {
-            overflow: hidden;
-            clear: both;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            border-bottom: solid 1px rgba(255, 255, 255, 0.2);
-        }
-
-        .kontakt {
-            font: 16px/20px  Arial, Helvetica, 'Nimbus Sans L', sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            border-bottom: solid 1px rgba(255, 255, 255, 0.5);
-        }
-
-        .kontakt h4, a {
-            display: block;
-        }
-        .kontakt a {
-            color: inherit;
-            margin-top: 20px;
-            text-decoration: none;
-            font-weight: 300;
-        }
-        .mail {
-            padding-bottom: 20px;
-        }
-        .kontakt span {
-            margin: 20px 10px 0 0;
-        }
-        .saznajVise {
-            position: absolute;
-            padding: 5px;
-            width: 120px;
-            bottom: 20px;
-            border: solid 1px rgba(255, 255, 255, 0.5);
-        }
-        .icon-right-open {
-            font: 16px/20px  'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
-            margin-left: 10px;
-        }
-
-        .crossfade {
-            position: relative;
-            padding-top: 68.88px;
-            width: 95%;
-            margin-left: 2.5%;
-            height: 350px;
-        }
-        .crossfade > figure {
-            animation: imageAnimation 30s linear infinite 0s;
-            backface-visibility: hidden;
-            background-size: cover;
-            background-position: 50% 10%;
-            color: transparent;
-            opacity: 0;
-            left: 0;
-            top:0;
-            height: 100%;
-            position: absolute;
-            width: 100%;
-            z-index: 0;
-            margin: 0;
-        }
-
-        .crossfade > figure:nth-child(1) {
-            background-image: url('image/image-1.jpg');
-            animation: firstImage;
-            opacity: 1;
-        }
-
-        .crossfade > figure:nth-child(2) {
-            animation-delay: 6s;
-            background-image: url('image/image-2.jpg');
-        }
-        .crossfade > figure:nth-child(3) {
-            animation-delay: 12s;
-            background-image: url('image/image-3.jpg');
-        }
-
-        @keyframes firstImage {
-            0% {opacity: 1;}
-            100% {opacity: 1;
-            }
-        }
-
-        @keyframes
-        imageAnimation {
-            0% {
-                animation-timing-function: ease-in;
-                opacity: 0;
-            }
-            8% {
-                animation-timing-function: ease-out;
-                opacity: 1;
-            }
-            17% {
-                opacity: 1
-            }
-            25% {
-                opacity: 0
-            }
-            100% {
-                opacity: 0
-            }
-        }
-
-        @media screen and (min-width: 600px) {
-            p, .fl, .fr {
-                font: 15px/18px  Arial;
-            }
-            .cubes {
-                width: 90%;
-                margin-left: 5%;
-                padding-bottom: 20px;
-            }
-            .cubes > div {
-                display: table;
-                width: 50%;
-                margin-left: 0;
-                float: left;
-            }
-            nav {
-                width: 90%;
-                margin-left: 5%;
-                min-height: 100px;
-                height: auto;
-                padding-top: 30px;
-            }
-            nav ul {
-                margin-top: 80px;
-                width: 100%;
-            }
-            .title {
-                float: left;
-                margin-top: 0;
-            }
-            .hamburgerDiv {
-                float: right;
-            }
-            footer {
-                margin-top: auto;
-            }
-            footer h5{
-                color: rgba(255, 255, 255, 0);
-            }
-        }
-        @media screen and (min-width: 1000px) {
-            p, .fl, .fr {
-                font: 13px/18px  Arial;
-            }
-            .crossfade {
-                width: 80%;
-                margin-left: 10%;
-                height: 500px;
-            }
-            .cubes {
-                margin: auto;
-                max-width: 1200px;
-            }
-            .cubes > div {
-                /*max-width: 300px;*/
-                display: table;
-                width: 75%;
-            }
-            .hamburgerDiv {
-                display: none;
-            }
-            .title {
-                display: inline-block;
-            }nav {
-                 width: 90%;
-                 margin: auto;
-                 max-width: 1200px;
-                margin-bottom: 50px;
-             }
-            nav ul {
-                float: right;
-                display: flex;
-                flex-direction: row;
-                margin: 0;
-                width: auto;
-            }
-            nav ul li {
-                text-align: center;
-                border-top: solid 1px #e8e8e8;
-                border-left: solid 1px #e8e8e8;
-                border-bottom: solid 1px #e8e8e8;
-            }
-            nav ul li:nth-of-type(4){border-right: solid 1px #e8e8e8;}
-            nav ul li a {
-                padding: 0 15px;
-            }
-        }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="main.min.css">
+    <meta name="robots" content="index, follow">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109830654-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-109830654-2');
+    </script>
 </head>
-
 <body>
     <header>
         <nav>
@@ -458,11 +87,11 @@
                 <span></span>
                 <span></span>
             </div>
-            <ul>
-                <li class="selected"><a>NASLOVNA</a></li>
-                <li><a>DJELATNOSTI</a></li>
-                <li><a>LABORATORIJ</a></li>
-                <li><a>KONTAKT</a></li>
+            <ul class="listica">
+                <li class="selected"><a class="selected">NASLOVNA</a></li>
+                <li><a href="djelatnosti/">DJELATNOSTI</a></li>
+                <li><a href="laboratorij/">LABORATORIJ</a></li>
+                <li><a href="kontakt/">KONTAKT</a></li>
             </ul>
         </nav>
 
@@ -476,73 +105,32 @@
         <div class="cubes">
             <div>
                 <h3>Djelatnosti</h3>
-                <p>Cum sociis natoque penatibus et magnis dis parturient montesmus.
-                    Pro vel nibh et elit mollis commodo et nec augue tristique sed</p>
-                <a class="saznajVise">Saznaj Više<span class="icon-right-open"></span></a>
+                <p>Veliki spektar djelatnosti omogućiti će vam da obavite kompletne preglede na jednom mjestu.</p>
+                <a href="djelatnosti" class="saznajVise">Saznaj Više<span class="icon-right-open"></span></a>
             </div>
             <div>
                 <h3>Laboratorij</h3>
-                <p>Cum sociis natoque penatibus et magnis dis parturient montesmus.
-                    Pro vel nibh et elit mollis commodo et nec augue tristique sed</p>
-                <a class="saznajVise">Saznaj Više<span class="icon-right-open"></span></a>
+                <p>Medicinske i biokemijske analize polazište su medicinske dijagnostike. Stoga su laboratorijske analize
+                    ključne u daljnjem određivanju toka dijagnostike te liječenja.</p>
+                <a href="laboratorij" class="saznajVise">Saznaj Više<span class="icon-right-open"></span></a>
             </div>
             <div>
                 <h3>Radno Vrijeme</h3>
                 <ul>
                     <li><span class="fl">Ponedjeljak - Petak</span><span class="fr">8.00 - 20.00</span></li>
-                    <li><span class="fl">Subota</span><span class="fr">8.00 - 14.00</span></li>
+                    <li><span class="fl">Subota</span><span class="fr">8.00 - 13.00</span></li>
                     <li><span class="fl">Nedjelja</span><span class="fr">Ne radimo</span></li>
                 </ul>
-                <a class="saznajVise">Saznaj Više<span class="icon-right-open"></span></a>
+                <a href="kontakt/" class="saznajVise">Saznaj Više<span class="icon-right-open"></span></a>
             </div>
             <div>
                 <h3>Kontakt</h3>
-                <!--<div class="kontakt">-->
-                    <!--<h4>Split</h4>-->
-                    <!--<a href="tel:+38521534701"><span class="icon-phone"></span>021 534 701</a>-->
-                    <!--<a class="mail" href="mailto:poliklinika.petrovic.st@gmail.com"><span class="icon-mail"></span>poliklinika.petrovic.st@gmail.com</a>-->
-                <!--</div>-->
-                <!--<div class="kontakt">-->
-                    <!--<h4>Vrgorac</h4>-->
-                    <!--<a href="tel:+38521674135"><span class="icon-phone"></span>021 674 135</a>-->
-                    <!--<a class="mail" href="mailto:poliklinika.drpetrovic@gmail.com"><span class="icon-mail"></span>poliklinika.drpetrovic@gmail.com</a>-->
-                <!--</div>-->
-                <p>Ako imate pitanja ili želite dogovoriti pregled slobodno nam se obratite</p>
-                <a class="saznajVise">Saznaj Više<span class="icon-right-open"></span></a>
+                <p>Ako imate pitanja ili želite dogovoriti pregled slobodno nam se obratite.</p>
+                <a class="saznajVise" href="kontakt/">Saznaj Više<span class="icon-right-open"></span></a>
             </div>
         </div>
     </header>
-    <footer>
-        <h5>some text</h5>
-    </footer>
-    <!--<section class="middle">-->
-        <!--<div>-->
-            <!--<h3><span class="icon-glyph-2"></span></h3>-->
-            <!--<h3>Cardio Montoring</h3>-->
-            <!--<p>MediCure theme functionality that was developed with health and medical websites in thought-->
-                <!--, with all the must-have features included.</p>-->
-        <!--</div>-->
-        <!--<div>-->
-            <!--<h3><span class="icon-glyph-3"></span></h3>-->
-            <!--<h3>Cardio Montoring</h3>-->
-            <!--<p>MediCure theme functionality that was developed with health and medical websites in thought-->
-                <!--, with all the must-have features included.</p>-->
-        <!--</div>-->
-        <!--<div>-->
-            <!--<h3><span class="icon-glyph-4"></span></h3>-->
-            <!--<h3>Cardio Montoring</h3>-->
-            <!--<p>Custom Services post type allows you display a variety of medical services for a large hospital as well-->
-                <!--as for a small private clinic.</p>-->
-        <!--</div>-->
-        <!--<div>-->
-            <!--<h3><span class="icon-glyph-5"></span></h3>-->
-            <!--<h3>Cardio Montoring</h3>-->
-            <!--<p>Custom Services post type allows you display a variety of medical services for a large hospital as well-->
-                <!--as for a small private clinic.</p>-->
-        <!--</div>-->
-    <!--</section>-->
-
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    <script src="js/main.js"></script>
+    <script src="app.min.js"></script>
 </body>
 </html>

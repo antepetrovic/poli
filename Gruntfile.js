@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     
     cssmin: {
       target: {
-           src: ['css/main.css'],
+           src: ['css/*.css'],
           dest: 'dist/main.min.css',
           ext: '.min.css'
       }
@@ -13,30 +13,38 @@ module.exports = function(grunt) {
 
     uglify: {
       options: {
-      mangle: false
+          mangle: true
       },
       my_target: {
         files: {
-          'dist/app.min.js': ['dist/built.js']
+          'dist/app.min.js': ['js/main.js']
           }
         }
     },
 
       watch: {
-          css: {
-              files: ['css/main.css', 'app.js'],
-              tasks: ['cssmin','concat', 'uglify']
+          scripts: {
+              files: ['css/main.css', 'js/main.js', '**/*.html', '*.html'],
+              tasks: ['cssmin','uglify','htmlmin'],
+              options: {
+                  spawn: false
+              }
           }
 
       },
 
-      concat: {
-          options: {
-              separator: ';'
-          },
-          dist: {
-              src: ['bioenergija.js', 'app.js'],
-              dest: 'dist/built.js'
+      htmlmin: {                                     // Task
+          dist: {                                      // Target
+              options: {                                 // Target options
+                  removeComments: true,
+                  collapseWhitespace: true
+              },
+              files: {
+                  'dist/index.html'             : 'index.html',
+                  'dist/kontakt/index.html'     : 'kontakt/index.html',
+                  'dist/laboratorij/index.html' : 'laboratorij/index.html',
+                  'dist/djelatnosti/index.html' : 'djelatnosti/index.html'
+              }
           }
       }
   });
@@ -44,12 +52,13 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-concat');
+
 
 
   // Default task(s).
-  grunt.registerTask('default', ['cssmin', 'concat','uglify','watch']);
+  grunt.registerTask('default', ['cssmin','uglify','htmlmin','watch']);
 
 };
 
