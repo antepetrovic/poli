@@ -1,7 +1,8 @@
 $(document).ready(function() {
 
     $(".hamburgerDiv").click(function() {
-        $("nav ul").toggleClass( "menuDrop" );
+        $("nav ul").fadeToggle(400);
+        //$("nav ul")
     });
 
 });
