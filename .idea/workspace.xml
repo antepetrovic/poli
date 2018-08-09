@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="135d6380-85d9-4d51-b787-b417ec0eee86" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/_navigation.scss" afterPath="$PROJECT_DIR$/css/_navigation.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css.map" afterPath="$PROJECT_DIR$/css/main.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app.min.js" afterPath="$PROJECT_DIR$/dist/app.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/djelatnosti/index.html" afterPath="$PROJECT_DIR$/dist/djelatnosti/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/kontakt/index.html" afterPath="$PROJECT_DIR$/dist/kontakt/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/laboratorij/index.html" afterPath="$PROJECT_DIR$/dist/laboratorij/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/main.min.css" afterPath="$PROJECT_DIR$/dist/main.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/djelatnosti/index.html" afterPath="$PROJECT_DIR$/djelatnosti/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kontakt/index.html" afterPath="$PROJECT_DIR$/kontakt/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laboratorij/index.html" afterPath="$PROJECT_DIR$/laboratorij/index.html" />
-    </list>
+    <list default="true" id="135d6380-85d9-4d51-b787-b417ec0eee86" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -55,8 +39,8 @@
       <file leaf-file-name="_navigation.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/_navigation.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="69" column="20" lean-forward="false" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
+            <state relative-caret-position="251">
+              <caret line="61" column="20" lean-forward="true" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -309,12 +293,12 @@
       <workItem from="1518775106677" duration="36000" />
       <workItem from="1518946930588" duration="1902000" />
       <workItem from="1519203114262" duration="6997000" />
-      <workItem from="1519482857119" duration="8120000" />
+      <workItem from="1519482857119" duration="8573000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145817000" />
+    <option name="totallyTimeSpent" value="146270000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="727" extended-state="0" />
@@ -705,8 +689,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/_navigation.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="69" column="20" lean-forward="false" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
+        <state relative-caret-position="251">
+          <caret line="61" column="20" lean-forward="true" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
           <folding />
         </state>
       </provider>
