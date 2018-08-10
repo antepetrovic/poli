@@ -30,7 +30,7 @@ footer {
         &::after {
           display: block;
           content: '';
-          @include size(30px 3px);
+          @include size(30px, 3px);
           background: $themeLightBlue;
           margin-top: 10px;
         }
@@ -58,7 +58,7 @@ footer {
             margin-right: 8px;
             content: "";
             display: inline-block;
-            @include triangle(8px, #fff, right);
+            @include triangle('right', 8px, 8px, #fff);
             opacity: .5;
           }
         }
